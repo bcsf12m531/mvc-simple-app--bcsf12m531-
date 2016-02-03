@@ -1,0 +1,31 @@
+﻿@model FinalViva.Models.User
+
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head></head>
+    <body
+          <h3>Form</h3>
+          @using (Html.BeginForm())
+{
+
+    <div>
+        @Html.LabelFor(model => model.email)
+        @Html.TextBoxFor(model => model.email)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.password)
+        @Html.TextBoxFor(model => model.password)
+    </div>
+              <div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                      
+}
+      </body>
+</html>
+
+
